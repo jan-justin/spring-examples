@@ -1,0 +1,11 @@
+[libraries]
+keycloak-testcontainers = { module = "com.github.dasniko:testcontainers-keycloak", version = "2.2.2" }
+spring-boot-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+spring-boot-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" }
+testcontainers = { module = "org.testcontainers:testcontainers" }
+testcontainers-bom = { module = "org.testcontainers:testcontainers-bom", version = "1.17.3" }
+testcontainers-junit = { module = "org.testcontainers:junit-jupiter" }
+
+[bundles]
+spring-boot = [ "spring-boot-test", "spring-boot-webflux" ]
+testcontainers = [ "testcontainers", "testcontainers-junit" ]

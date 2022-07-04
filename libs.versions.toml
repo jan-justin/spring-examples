@@ -1,0 +1,19 @@
+[versions]
+kotlin = "1.6.21"
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version = "2.7.1" }
+spring-dependency-management = { id = "io.spring.dependency-management", version = "1.0.11.RELEASE" }
+
+[libraries]
+jackson-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
+keycloak-bom = { module = "org.keycloak.bom:keycloak-adapter-bom", version = "18.0.2" }
+keycloak-boot = { module = "org.keycloak:keycloak-spring-boot-starter" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+kotlin-stdlib-jdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
+spring-boot-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+
+[bundles]
+kotlin = [ "kotlin-reflect", "kotlin-stdlib-jdk8" ]
