@@ -1,0 +1,12 @@
+{
+  "realm": "todos",
+  "resource": "todos-rest-api",
+  "auth-server-url": "http://localhost:8080",
+  "bearer-only": true,
+  "ssl-required": "external",
+  "verify-token-audience": true,
+  "use-resource-role-mappings": true,
+  "credentials": {
+    "secret": "YcL9ud2eVhT1mS7qcohadMzys53etaZ2"
+  }
+}

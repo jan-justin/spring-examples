@@ -1,19 +1,27 @@
 [versions]
 kotlin = "1.6.21"
+spring-boot = "2.7.1"
+spring-dependency-management = "1.0.11.RELEASE"
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
-spring-boot = { id = "org.springframework.boot", version = "2.7.1" }
-spring-dependency-management = { id = "io.spring.dependency-management", version = "1.0.11.RELEASE" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }
 
 [libraries]
 jackson-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
 keycloak-bom = { module = "org.keycloak.bom:keycloak-adapter-bom", version = "18.0.2" }
 keycloak-boot = { module = "org.keycloak:keycloak-spring-boot-starter" }
+keycloak-security-adapter = { module = "org.keycloak:keycloak-spring-security-adapter" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+kotlin-spring-plugin = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
 kotlin-stdlib-jdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
+spring-boot-plugin = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "spring-boot" }
+spring-boot-security = { module = "org.springframework.boot:spring-boot-starter-security" }
 spring-boot-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-dependency-management-plugin = { module = "io.spring.gradle:dependency-management-plugin", version.ref = "spring-dependency-management" }
 
 [bundles]
 kotlin = [ "kotlin-reflect", "kotlin-stdlib-jdk8" ]

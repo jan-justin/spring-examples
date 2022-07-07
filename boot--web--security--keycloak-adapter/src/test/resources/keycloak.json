@@ -1,0 +1,3 @@
+{
+  "note": "Due to the use of testcontainers, the keycloak.json config will be handled dynamically by the tests"
+}

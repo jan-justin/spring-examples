@@ -18,4 +18,7 @@ dependencyResolutionManagement {
     }
 }
 
-include("boot--web--keycloak-starter")
+include(
+    "boot--web--keycloak-starter",
+    "boot--web--security--keycloak-adapter",
+)

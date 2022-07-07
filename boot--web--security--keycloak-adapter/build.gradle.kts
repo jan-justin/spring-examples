@@ -6,8 +6,9 @@ plugins {
 }
 
 dependencies {
-    implementation(libs.keycloak.boot)
+    implementation(libs.keycloak.security.adapter)
     implementation(libs.jackson.kotlin)
+    implementation(libs.spring.boot.security)
     implementation(libs.spring.boot.web)
     testImplementation(testLibs.bundles.testcontainers)
     testImplementation(testLibs.keycloak.testcontainers)
