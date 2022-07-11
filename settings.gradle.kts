@@ -22,4 +22,5 @@ include(
     "boot--web--keycloak-starter",
     "boot--web--security--keycloak-adapter",
     "boot--web--security--keycloak-adapter-and-starter",
+    "boot--webflux--oauth2-resource-server",
 )
