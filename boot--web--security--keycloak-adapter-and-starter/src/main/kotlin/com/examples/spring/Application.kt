@@ -57,7 +57,7 @@ class SecurityConfiguration : KeycloakWebSecurityConfigurerAdapter() {
 @RestController
 @RequestMapping("/api/todos")
 class TodoController {
-    val todos = mutableListOf<String>()
+    private val todos = mutableListOf<String>()
 
     @GetMapping
     fun readTodos(): List<String> =
