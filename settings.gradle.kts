@@ -19,6 +19,7 @@ dependencyResolutionManagement {
 }
 
 include(
+    "boot--custom-autoconfiguration",
     "boot--web--keycloak-starter",
     "boot--web--oauth2-resource-server",
     "boot--web--security--keycloak-adapter",

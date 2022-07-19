@@ -7,9 +7,9 @@ plugins {
 tasks {
     withType<KotlinCompile> {
         kotlinOptions {
-            val sourceCompatibility: String by project
+            val targetCompatibility: String by project
             freeCompilerArgs = listOf("-Xjsr305=strict")
-            jvmTarget = sourceCompatibility
+            jvmTarget = targetCompatibility
         }
     }
 
